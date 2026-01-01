@@ -17,6 +17,9 @@ spec:
         image: argoproj/rollouts-demo:green
         ports:
         - containerPort: 8080
+        resources:
+          requests:
+            cpu: "100m"
   strategy:
     blueGreen: 
       activeService: bluegreen-active-demo
