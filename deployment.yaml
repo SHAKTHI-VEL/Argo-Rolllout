@@ -15,6 +15,7 @@ spec:
       containers:
       - name: bluegreen-demo
         image: shakthi28/k8-helper:latest
+        imagePullPolicy: Always
         ports:
         - containerPort: 8080
         resources:
